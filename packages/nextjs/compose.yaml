@@ -1,0 +1,11 @@
+version: "3"
+services:
+  care-pledge-database:
+    image: postgres
+    env_file:
+      - ./.env
+    container_name: care_pledge_db
+    volumes:
+      - ./migrations/:/docker-entrypoint-initdb.d/
+    ports:
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
