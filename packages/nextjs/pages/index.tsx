@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import {
   Web3AuthEventListener, // SafeAuthKit,
   // SafeAuthSignInData,
@@ -59,9 +60,9 @@ const Home: NextPage = () => {
   // };
 
   return (
-    <>
-      <>HELLOOOO</>
-    </>
+    <h1>
+      Hospital DAO <Link href="/Upload">Upload Here!</Link>
+    </h1>
   );
 };
 
