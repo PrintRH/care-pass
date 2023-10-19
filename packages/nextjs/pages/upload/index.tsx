@@ -13,9 +13,7 @@ const Upload: NextPage = () => {
     // Pushes file or folder to lighthouse node
     // Third parameter is for multiple files, if multiple files are to be uploaded at once make it true
     // Fourth parameter is the deal parameters, default null
-    console.log("HERERE");
-    console.log(scaffoldConfig.lighthouseApiKey);
-    const apiKey = process.env.NEXT_PUBLIC_LIGHTHOUSE_API_KEY || "";
+    const apiKey = scaffoldConfig.lighthouseApiKey || "";
     try {
       let output: any;
       console.log(apiKey);

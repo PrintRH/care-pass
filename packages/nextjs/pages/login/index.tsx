@@ -27,6 +27,27 @@ const Login: NextPage = () => {
         web3AuthModalPack.subscribe(ADAPTER_EVENTS.CONNECTED, connectedHandler);
         web3AuthModalPack.subscribe(ADAPTER_EVENTS.DISCONNECTED, disconnectedHandler);
         setWeb3AuthModalPack(web3AuthModalPack);
+        try {
+          const data = {
+            name: userInfo.name,
+            email: userInfo.email,
+            role: "PATIENT",
+            loginType: userInfo.typeOfLogin,
+            walletAddress: authKitSignData.eoa,
+          };
+          const response = await fetch("/api/createUser", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+          return response.json();
+        } catch (err: any) {
+          if (err.code === "P2002") {
+            //Handle unique constraint.
+          }
+        }
       }
     })();
   }, [web3AuthModalPack, loggedInUserWalletAddress, setWalletAddress, setUserInfo]);
