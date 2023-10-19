@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "dev": "docker compose up -d && next dev",
+    "dev": "cd docker && docker compose up -d && cd .. && next dev",
     "start": "next dev",
     "build": "next build",
     "serve": "next start",
@@ -25,6 +25,7 @@
     "@web3auth/base": "^7.0.4",
     "@web3auth/modal": "^7.0.4",
     "blo": "^1.0.1",
+    "bootstrap": "^5.3.2",
     "daisyui": "^3.5.1",
     "ethers": "5.7.2",
     "next": "^13.1.6",

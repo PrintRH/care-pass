@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <>
       <h1>
-        Hospital DAO <Link href="/Upload">Upload Here!</Link>
+        Hospital DAO <Link href="/upload">Upload Here!</Link>
       </h1>
       <div className="drawer drawer-open">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />

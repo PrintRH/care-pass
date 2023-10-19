@@ -7,6 +7,7 @@ export type ScaffoldConfig = {
   walletConnectProjectId: string;
   onlyLocalBurnerWallet: boolean;
   walletAutoConnect: boolean;
+  lighthouseApiKey: string;
 };
 
 const scaffoldConfig = {
@@ -38,6 +39,8 @@ const scaffoldConfig = {
    * 2. If user is not connected to any wallet:  On reload, connect to burner wallet if burnerWallet.enabled is true && burnerWallet.onlyLocal is false
    */
   walletAutoConnect: true,
+
+  lighthouseApiKey: process.env.NEXT_PUBLIC_LIGHTHOUSE_API_KEY || "",
 } satisfies ScaffoldConfig;
 
 export default scaffoldConfig;

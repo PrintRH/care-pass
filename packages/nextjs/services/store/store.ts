@@ -1,3 +1,4 @@
+import { UserInfo } from "@web3auth/base";
 import create from "zustand";
 
 /**
@@ -11,10 +12,18 @@ import create from "zustand";
 
 type TGlobalState = {
   nativeCurrencyPrice: number;
+  loggedInUserWalletAddress: string;
+  userInfo: Partial<UserInfo>;
   setNativeCurrencyPrice: (newNativeCurrencyPriceState: number) => void;
+  setLoggedInUserWallet: (newLoggedInUserWalletAddress: string) => void;
+  setUserInfo: (newUserInfo: Partial<UserInfo>) => void;
 };
 
 export const useGlobalState = create<TGlobalState>(set => ({
   nativeCurrencyPrice: 0,
+  loggedInUserWalletAddress: "",
+  userInfo: {},
   setNativeCurrencyPrice: (newValue: number): void => set(() => ({ nativeCurrencyPrice: newValue })),
+  setLoggedInUserWallet: (newValue: string): void => set(() => ({ loggedInUserWalletAddress: newValue })),
+  setUserInfo: (newValue: Partial<UserInfo>): void => set(() => ({ userInfo: newValue })),
 }));
