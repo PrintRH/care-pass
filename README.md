@@ -33,6 +33,6 @@ These reports are done multiple times
 Planned solution
 
 1. Safe AA - Web3 identities using email / social login
-2. Sismo + FVM
-3. Lit protocol to encrypt content
+2. Filecoin (FVM) & Lighthouse Storage
+3. Sismo for Privacy
 4. XMTP / PUSH protocol for messaging / Chat between web3 identities.
