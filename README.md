@@ -1,4 +1,4 @@
-# care-pass
+#🏥 Care Pass DAO
 ETH Global Hackathon 
 
 CP Use case
