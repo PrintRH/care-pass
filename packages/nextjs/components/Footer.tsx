@@ -5,7 +5,7 @@ export const Footer = () => {
         <p className="m-0 text-center">Accelerate healthcare with us here</p>
         <a
           className="flex justify-center items-center gap-1"
-          href="https://github.com/DChan0319/EthGlobal_2023/tree/master"
+          href="https://github.com/PrintRH/care-pass"
           target="_blank"
           rel="noreferrer"
         ></a>
