@@ -1,0 +1,22 @@
+{
+    "name": "Care Pass",
+    "iconUrl": "",
+    "providerClassName": "CarePassProvider",
+    "functions": [
+      {
+        "name": "Get patients with diagnosis",
+        "functionName": "getPatientsByDiagnoses",
+        "countFunctionName": "getPatientsByDiagnosesCount",
+        "description": "Returns patients with a specific diagnosis",
+        "args": [
+          {
+            "name": "diagnosis of patient",
+            "argName": "patientDiagnosis",
+            "type": "string",
+            "example": "0x26e5-0x03",
+            "description": "A diagnosis given to a group of patients <Docs URL>"
+          }
+        ]
+      }
+    ]
+  }
