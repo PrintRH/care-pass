@@ -22,6 +22,26 @@ const Patient: NextPage = () => {
             </div>
           </div>
         </div>
+        <div>
+          <button
+            type="button"
+            className="bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-m px-10 py-2 text-center ml-4 mr-4 mb-8 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <div>Vote</div>
+          </button>
+          <button
+            type="button"
+            className="bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-m px-7 py-2 text-center ml-4 mr-4 mb-8 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <div>Propose</div>
+          </button>
+          <button
+            type="button"
+            className="bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-m px-7 py-2 text-center ml-4 mr-4 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <div>Execute</div>
+          </button>
+        </div>
       </div>
       <h2 className="pt-6 pl-6 pr-6 relative flex w-full flex-wrap items-stretch mb-3">
         <span className="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-lg items-center justify-center w-8 pl-3 py-3">

@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 contract HospitalToken is ERC20Votes {
 	uint256 public s_maxSupply = 1000000000000000000000000;
 
-	constructor() ERC20("HospitalToken", "DGT") ERC20Permit("HospitalToken") {
+	constructor() ERC20("HospitalToken", "HT") ERC20Permit("HospitalToken") {
 		_mint(msg.sender, s_maxSupply);
 	}
 
