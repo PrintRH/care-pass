@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "dev": "cd docker && docker compose up -d && cd .. && next dev",
+    "dev": "next dev",
     "start": "next dev",
     "build": "next build",
     "serve": "next start",
