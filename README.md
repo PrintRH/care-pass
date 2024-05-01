@@ -37,6 +37,3 @@ Planned solution
 2. Filecoin (FVM) & Lighthouse Storage
 3. Sismo for Privacy
 4. XMTP / PUSH protocol for messaging / Chat between web3 identities.
-
-
-#Demo : https://www.loom.com/share/c1255fe952a548bebc5edc8dbff330bf
